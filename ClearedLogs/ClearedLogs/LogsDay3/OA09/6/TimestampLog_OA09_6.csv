@@ -1,0 +1,4 @@
+userID;scenarioID;controlMode;elapsedTime;timeStampEvent;additionalInfo;
+OA09;6;Waypoint;0,0;RequestStarted;1;
+OA09;6;Waypoint;0,0;RequestStarted;2;
+OA09;6;Waypoint;1,4;RequestOpenedMain;2;

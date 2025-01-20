@@ -1,0 +1,15 @@
+userID;scenarioID;controlMode;elapsedTime;timeStampEvent;additionalInfo;
+DB06;8;InteractivePathPlanning;0,0;RequestStarted;1;
+DB06;8;InteractivePathPlanning;0,0;RequestStarted;2;
+DB06;8;InteractivePathPlanning;0,0;RequestStarted;3;
+DB06;8;InteractivePathPlanning;1,7;RequestOpenedMain;1;
+DB06;8;InteractivePathPlanning;37,5;RequestRemovedMain;1;
+DB06;8;InteractivePathPlanning;37,5;RequestOpenedSecondary;1;
+DB06;8;InteractivePathPlanning;37,5;RequestOpenedMain;2;
+DB06;8;InteractivePathPlanning;41,9;RequestRemovedSecondary;1;
+DB06;8;InteractivePathPlanning;41,9;RequestFinished;1;
+DB06;8;InteractivePathPlanning;61,3;RequestRemovedMain;2;
+DB06;8;InteractivePathPlanning;61,3;RequestOpenedSecondary;2;
+DB06;8;InteractivePathPlanning;61,3;RequestOpenedMain;3;
+DB06;8;InteractivePathPlanning;76,1;RequestRemovedSecondary;2;
+DB06;8;InteractivePathPlanning;76,1;RequestFinished;2;

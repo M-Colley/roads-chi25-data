@@ -1,0 +1,17 @@
+userID;scenarioID;controlMode;elapsedTime;timeStampEvent;additionalInfo;
+MS01;-1;Trajectory;0,0;RequestStarted;1;
+MS01;-1;Trajectory;0,0;RequestStarted;2;
+MS01;-1;Trajectory;2,9;RequestOpenedMain;1;
+MS01;-1;Trajectory;107,5;RequestOpenedSecondary;2;
+MS01;-1;Trajectory;111,3;RequestRemovedSecondary;2;
+MS01;-1;Trajectory;111,3;RequestRemovedMain;1;
+MS01;-1;Trajectory;111,3;RequestOpenedSecondary;1;
+MS01;-1;Trajectory;111,3;RequestOpenedMain;2;
+MS01;-1;Trajectory;111,3;RequestRemovedSecondary;1;
+MS01;-1;Trajectory;111,3;RequestOpenedSecondary;1;
+MS01;-1;Trajectory;114,0;RequestRemovedSecondary;1;
+MS01;-1;Trajectory;114,0;RequestRemovedMain;2;
+MS01;-1;Trajectory;114,0;RequestOpenedSecondary;2;
+MS01;-1;Trajectory;114,0;RequestOpenedMain;1;
+MS01;-1;Trajectory;114,0;RequestRemovedSecondary;2;
+MS01;-1;Trajectory;114,0;RequestOpenedSecondary;2;

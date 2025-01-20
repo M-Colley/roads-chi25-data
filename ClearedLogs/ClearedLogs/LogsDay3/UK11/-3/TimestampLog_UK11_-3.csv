@@ -1,0 +1,13 @@
+userID;scenarioID;controlMode;elapsedTime;timeStampEvent;additionalInfo;
+UK11;-3;Waypoint;0,0;RequestStarted;1;
+UK11;-3;Waypoint;0,0;RequestStarted;2;
+UK11;-3;Waypoint;1,2;RequestOpenedMain;1;
+UK11;-3;Waypoint;33,7;RequestRemovedMain;1;
+UK11;-3;Waypoint;33,7;RequestOpenedSecondary;1;
+UK11;-3;Waypoint;33,7;RequestOpenedMain;2;
+UK11;-3;Waypoint;81,7;RequestRemovedMain;2;
+UK11;-3;Waypoint;81,7;RequestFinished;2;
+UK11;-3;Waypoint;88,5;RequestRemovedSecondary;1;
+UK11;-3;Waypoint;89,4;RequestOpenedMain;1;
+UK11;-3;Waypoint;119,3;RequestRemovedMain;1;
+UK11;-3;Waypoint;119,3;RequestFinished;1;

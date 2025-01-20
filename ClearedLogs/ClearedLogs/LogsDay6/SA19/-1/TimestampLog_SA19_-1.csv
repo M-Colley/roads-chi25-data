@@ -1,0 +1,7 @@
+userID;scenarioID;controlMode;elapsedTime;timeStampEvent;additionalInfo;
+SA19;-1;Trajectory;0,0;RequestStarted;1;
+SA19;-1;Trajectory;0,0;RequestStarted;2;
+SA19;-1;Trajectory;7,6;RequestOpenedMain;1;
+SA19;-1;Trajectory;64,2;RequestRemovedMain;1;
+SA19;-1;Trajectory;64,2;RequestFinished;1;
+SA19;-1;Trajectory;67,5;RequestOpenedMain;2;

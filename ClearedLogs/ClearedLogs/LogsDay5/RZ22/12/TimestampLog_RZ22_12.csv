@@ -1,0 +1,12 @@
+userID;scenarioID;controlMode;elapsedTime;timeStampEvent;additionalInfo;
+RZ22;12;Waypoint;0,0;RequestStarted;1;
+RZ22;12;Waypoint;0,0;RequestStarted;2;
+RZ22;12;Waypoint;0,0;RequestStarted;3;
+RZ22;12;Waypoint;0,0;RequestStarted;4;
+RZ22;12;Waypoint;3,1;RequestOpenedMain;1;
+RZ22;12;Waypoint;56,2;RequestRemovedMain;1;
+RZ22;12;Waypoint;56,2;RequestFinished;1;
+RZ22;12;Waypoint;56,6;RequestOpenedMain;2;
+RZ22;12;Waypoint;94,3;RequestRemovedMain;2;
+RZ22;12;Waypoint;94,3;RequestFinished;2;
+RZ22;12;Waypoint;95,2;RequestOpenedMain;3;

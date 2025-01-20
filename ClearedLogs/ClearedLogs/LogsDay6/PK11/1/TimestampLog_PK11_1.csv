@@ -1,0 +1,5 @@
+userID;scenarioID;controlMode;elapsedTime;timeStampEvent;additionalInfo;
+PK11;1;Trajectory;0,0;RequestStarted;1;
+PK11;1;Trajectory;3,4;RequestOpenedMain;1;
+PK11;1;Trajectory;53,2;RequestRemovedMain;1;
+PK11;1;Trajectory;53,2;RequestFinished;1;
