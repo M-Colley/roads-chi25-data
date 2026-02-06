@@ -1,0 +1,133 @@
+# Local-to-canonical DV mappings for the ROADS dataset.
+#
+# Usage: copy this file next to your dataset (or into the dv-standardization-tool
+# repo) and pass it to the converter using the tool's custom mapping flag.
+# Run `python scripts/convert_dv.py --help` in the dv-standardization-tool repo
+# to confirm the exact flag name for custom mappings.
+
+dvs:
+  NASA-TLX1:
+    aliases: [TLX1, tlx1]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX2:
+    aliases: [TLX2, tlx2]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX3:
+    aliases: [TLX3, tlx3]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX4:
+    aliases: [TLX4, tlx4]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX5:
+    aliases: [TLX5, tlx5]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX6:
+    aliases: [TLX6, tlx6]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  SUS1:
+    aliases: [SUS1, sus1]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS2:
+    aliases: [SUS2, sus2]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS3:
+    aliases: [SUS3, sus3]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS4:
+    aliases: [SUS4, sus4]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS5:
+    aliases: [SUS5, sus5]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS6:
+    aliases: [SUS6, sus6]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS7:
+    aliases: [SUS7, sus7]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS8:
+    aliases: [SUS8, sus8]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS9:
+    aliases: [SUS9, sus9]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS10:
+    aliases: [SUS10, sus10]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA1:
+    aliases: [aoa1, AOA1]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA2:
+    aliases: [aoa2, AOA2]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA3:
+    aliases: [aoa3, AOA3]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA4:
+    aliases: [aoa4, AOA4]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA5:
+    aliases: [aoa5, AOA5]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA6:
+    aliases: [aoa6, AOA6]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA7:
+    aliases: [aoa7, AOA7]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA8:
+    aliases: [aoa8, AOA8]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA9:
+    aliases: [aoa9, AOA9]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
