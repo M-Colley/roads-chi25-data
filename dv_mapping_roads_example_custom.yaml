@@ -1,0 +1,165 @@
+# Complete custom DV mapping for the ROADS dataset (all available questionnaire DVs).
+#
+# This file is intended to be used directly with dv-standardization-tool.
+# It includes all constructs used in this repository's analyses:
+# - NASA-TLX items (TLX1..TLX6)
+# - SUS items (SUS1..SUS10)
+# - van der Laan Acceptance items (AOA1..AOA9)
+# - Derived summary scores used in analysis scripts
+#
+# Usage:
+#   python scripts/convert_dv.py --help
+#   # then run convert_dv.py with the custom-mapping flag and this file
+
+dvs:
+  TLX_SCORE:
+    aliases: [tlxScore, TLXScore, tlx_score, NASA_TLX_SCORE, nasa_tlx_score]
+    measurement:
+      scale_type: score
+      direction: lower_is_better
+
+  SUS_SCORE:
+    aliases: [SUSScore, susScore, sus_score, SYSTEM_USABILITY_SCORE, system_usability_score]
+    measurement:
+      scale_type: score
+      direction: higher_is_more
+
+  AOA_USEFULNESS:
+    aliases: [AOAUsefulness, aoa_usefulness, van_der_laan_usefulness, acceptance_usefulness]
+    measurement:
+      scale_type: score
+      direction: higher_is_more
+
+  AOA_SATISFYING:
+    aliases: [AOASatisfying, aoa_satisfying, van_der_laan_satisfying, acceptance_satisfying]
+    measurement:
+      scale_type: score
+      direction: higher_is_more
+
+  NASA-TLX1:
+    aliases: [TLX1, tlx1, NASA_TLX1, nasa_tlx1, MentalLoad, mental_load, ML]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX2:
+    aliases: [TLX2, tlx2, NASA_TLX2, nasa_tlx2]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX3:
+    aliases: [TLX3, tlx3, NASA_TLX3, nasa_tlx3]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX4:
+    aliases: [TLX4, tlx4, NASA_TLX4, nasa_tlx4]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX5:
+    aliases: [TLX5, tlx5, NASA_TLX5, nasa_tlx5]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+  NASA-TLX6:
+    aliases: [TLX6, tlx6, NASA_TLX6, nasa_tlx6]
+    measurement:
+      scale_type: likert
+      direction: lower_is_better
+
+  SUS1:
+    aliases: [SUS1, sus1, usability_q1, UsabilityQ1, U1]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS2:
+    aliases: [SUS2, sus2, usability_q2, UsabilityQ2, U2]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS3:
+    aliases: [SUS3, sus3, usability_q3, UsabilityQ3, U3]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS4:
+    aliases: [SUS4, sus4, usability_q4, UsabilityQ4, U4]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS5:
+    aliases: [SUS5, sus5, usability_q5, UsabilityQ5, U5]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS6:
+    aliases: [SUS6, sus6, usability_q6, UsabilityQ6, U6]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS7:
+    aliases: [SUS7, sus7, usability_q7, UsabilityQ7, U7]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS8:
+    aliases: [SUS8, sus8, usability_q8, UsabilityQ8, U8]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS9:
+    aliases: [SUS9, sus9, usability_q9, UsabilityQ9, U9]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  SUS10:
+    aliases: [SUS10, sus10, usability_q10, UsabilityQ10, U10]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+
+  AOA1:
+    aliases: [AOA1, aoa1, acceptance_1, vdL_1]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA2:
+    aliases: [AOA2, aoa2, acceptance_2, vdL_2]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA3:
+    aliases: [AOA3, aoa3, acceptance_3, vdL_3]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA4:
+    aliases: [AOA4, aoa4, acceptance_4, vdL_4]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA5:
+    aliases: [AOA5, aoa5, acceptance_5, vdL_5]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA6:
+    aliases: [AOA6, aoa6, acceptance_6, vdL_6]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA7:
+    aliases: [AOA7, aoa7, acceptance_7, vdL_7]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA8:
+    aliases: [AOA8, aoa8, acceptance_8, vdL_8]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
+  AOA9:
+    aliases: [AOA9, aoa9, acceptance_9, vdL_9]
+    measurement:
+      scale_type: likert
+      direction: higher_is_more
