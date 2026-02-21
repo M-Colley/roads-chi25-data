@@ -1,16 +1,27 @@
 library("rstudioapi")
 setwd(dirname(getActiveDocumentContext()$path))
 
-library(devtools)
-source_url("https://raw.githubusercontent.com/M-Colley/rCode/main/r_functionality.R")
+library(easystats)
+library(see)
+library(ggplot2)
+library(ARTool)
+library(tidyr)
+library(dplyr)
+library(reporttools)
+library(PMCMRplus)
+library(FSA)
+library(ggstatsplot)
+library(stats)
 
+library(colleyRstats)
+colleyRstats::colleyRstats_setup()
 
 main_df <- readxl::read_xlsx(path = "results-roads-chi25.xlsx", sheet = "Results")
 main_df <- as.data.frame(main_df)
 names(main_df)
 
 # replace all negative values with the actual values
-main_df <- replace_values(main_df, c("neg2", "neg1"), c("-2", "-1"))
+main_df <- colleyRstats::replace_values(main_df, c("neg2", "neg1"), c("-2", "-1"))
 
 # TLX
 main_df$tlxScore <- (main_df$TLX1 + main_df$TLX2 + main_df$TLX3 + main_df$TLX4 + main_df$TLX5 + main_df$TLX6) / 6.0
@@ -116,7 +127,7 @@ ggwithinstats(
   p.adjust.method = "holm", boxplot.args = list(width = 0.1, alpha = 0.5, na.rm = TRUE, color = "black"), pairwise.display = "none",
   ggplot.component = list(theme(text = element_text(size = 16), plot.subtitle = element_text(size = 17, face = "bold"))), results.subtitle = FALSE
 ) 
-ggsave("plots/interaction_nasa_tlx.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/interaction_nasa_tlx.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 
@@ -126,7 +137,7 @@ ggwithinstats(
   p.adjust.method = "holm", boxplot.args = list(width = 0.1, alpha = 0.5, na.rm = TRUE, color = "black"), pairwise.display = "none",
   ggplot.component = list(theme(text = element_text(size = 16), plot.subtitle = element_text(size = 17, face = "bold"))), ggsignif.args = list(textsize = -1, tip_length = 0.01), results.subtitle = FALSE
 )
-ggsave("plots/numberOfRequests_nasa_tlx.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/numberOfRequests_nasa_tlx.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 
@@ -171,7 +182,7 @@ ggwithinstats(
   p.adjust.method = "holm", boxplot.args = list(width = 0.1, alpha = 0.5, na.rm = TRUE, color = "black"), pairwise.display = "none",
   ggplot.component = list(theme(text = element_text(size = 16), plot.subtitle = element_text(size = 17, face = "bold"))), results.subtitle = FALSE
 ) 
-ggsave("plots/interaction_sus.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/interaction_sus.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 
@@ -181,7 +192,7 @@ ggwithinstats(
   p.adjust.method = "holm", boxplot.args = list(width = 0.1, alpha = 0.5, na.rm = TRUE, color = "black"), pairwise.display = "none",
   ggplot.component = list(theme(text = element_text(size = 16), plot.subtitle = element_text(size = 17, face = "bold"))), ggsignif.args = list(textsize = -1, tip_length = 0.01), results.subtitle = FALSE
 )
-ggsave("plots/numberOfRequests_sus.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/numberOfRequests_sus.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 
@@ -207,7 +218,7 @@ ggwithinstats(
   p.adjust.method = "holm", boxplot.args = list(width = 0.1, alpha = 0.5, na.rm = TRUE, color = "black"), pairwise.display = "none",
   ggplot.component = list(theme(text = element_text(size = 16), plot.subtitle = element_text(size = 17, face = "bold"))), results.subtitle = FALSE
 ) 
-ggsave("plots/interaction_AOAUsefulness.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/interaction_AOAUsefulness.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 
@@ -217,7 +228,7 @@ ggwithinstats(
   p.adjust.method = "holm", boxplot.args = list(width = 0.1, alpha = 0.5, na.rm = TRUE, color = "black"), pairwise.display = "none",
   ggplot.component = list(theme(text = element_text(size = 16), plot.subtitle = element_text(size = 17, face = "bold"))), ggsignif.args = list(textsize = -1, tip_length = 0.01), results.subtitle = FALSE
 )
-ggsave("plots/numberOfRequests_AOAUsefulness.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/numberOfRequests_AOAUsefulness.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 
@@ -249,7 +260,7 @@ main_df %>% ggplot() +
   stat_summary(fun = mean, geom = "point", size = 4.0) +
   stat_summary(fun = mean, geom = "line", linewidth = 2) +
   stat_summary(fun.data = "mean_cl_boot", geom = "errorbar", width = .5, position = position_dodge(width = 0.1)) # 95 % mean_cl_boot is 95% confidence intervals
-# ggsave("plots/AOASatisfying_interaction.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+# ggsave("plots/AOASatisfying_interaction.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 ggwithinstats(
@@ -258,7 +269,7 @@ ggwithinstats(
   p.adjust.method = "holm", boxplot.args = list(width = 0.1, alpha = 0.5, na.rm = TRUE, color = "black"), pairwise.display = "none",
   ggplot.component = list(theme(text = element_text(size = 16), plot.subtitle = element_text(size = 17, face = "bold"))), results.subtitle = FALSE
 ) 
-ggsave("plots/interaction_AOASatisfying.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/interaction_AOASatisfying.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 
@@ -268,7 +279,7 @@ ggwithinstats(
   p.adjust.method = "holm", boxplot.args = list(width = 0.1, alpha = 0.5, na.rm = TRUE, color = "black"), pairwise.display = "none",
   ggplot.component = list(theme(text = element_text(size = 16), plot.subtitle = element_text(size = 17, face = "bold"))), ggsignif.args = list(textsize = -1, tip_length = 0.01), results.subtitle = FALSE
 )
-ggsave("plots/numberOfRequests_AOASatisfying.pdf", width = pdfwidth, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/numberOfRequests_AOASatisfying.pdf", width = 12, height = 9, device = cairo_pdf)
 
 
 
@@ -314,7 +325,7 @@ rank_x_lab <- c("path" = "Path", "way" = "Waypoints", "traj" = "Trajectory")
 
 
 ggwithinstatsWithPriorNormalityCheck(data = data_long, x = "ConditionID", y = "rank", ylab = "Rank (lower is better)", xlabels = rank_x_lab)
-ggsave("plots/rank_devices.pdf", width = pdfwidth + 5, height = pdfheight + 2, device = cairo_pdf)
+ggsave("plots/rank_devices.pdf", width = 12 + 5, height = 9, device = cairo_pdf)
 
 
 
@@ -366,7 +377,8 @@ library(lme4)
 
 
 mlm_model <- lm(cbind(tlxScore, SUSScore, AOAUsefulness, AOASatisfying) ~ interaction * numberOfRequests, data = main_df)
-combined_model <- Manova(mlm_model)
+combined_model <- stats::manova(mlm_model)
 summary(combined_model)
 
 # report::report(combined_model)
+
